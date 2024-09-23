@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_OSX_ARCHITECTURES "arm64")
 
 # Set the project name
-project(leetcode)
+project(solution)
 
 # Include directories for headers
 include_directories(src)
@@ -17,10 +17,12 @@ include_directories(src)
 set(SOURCES
     main.cpp
     440/solution.cpp
+    2707/solution.cpp
 )
 
 set(DIRECTORIES
   440
+  2707
 )
 
 add_executable(solution ${SOURCES})
