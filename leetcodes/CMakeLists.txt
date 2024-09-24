@@ -15,9 +15,7 @@ project(solution)
 include_directories(src)
 
 set(SOURCES
-    main.cpp
-    440/solution.cpp
-    2707/solution.cpp
+    179/solution.cpp
 )
 
 set(DIRECTORIES
