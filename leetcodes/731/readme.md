@@ -29,25 +29,8 @@ myCalendarTwo.book(5, 15); // return False, The event cannot be booked, because 
 myCalendarTwo.book(5, 10); // return True, The event can be booked, as it does not use time 10 which is already double booked.
 myCalendarTwo.book(25, 55); // return True, The event can be booked, as the time in [25, 40) will be double booked with the third event, the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.
 
-, , [5, 15], [5, 10], [25, 55]]
+# Logic
 
-            [10, 15]
-
-[], [10, 20], [50, 60], [] 0, 4, 0, 2, 0, 1
-
-10 50
-
-[1,2,3]
-|
-
-    size() - 1
-
-[1, 2, 3]
-|
-0
-3
-[1,2,3,4,5] 0, 5
-| 0, 2
-|
-
-      10, 10, 10, 10
+1. When added the step check if there is a overlap, if there is, then save the overlap. This is double booking.
+2. Check if the overlap that would have been added with previously overlapping ranges. This will be triple booking so false.
+3. If all passes, add the ragne and return true. (not sorted)
