@@ -14,8 +14,6 @@ struct Entity {
   int* attackPower = NULL;
   std::string* state = NULL;
 
-  int num_attributes = 5;
-
   Entity();
 
   ~Entity();

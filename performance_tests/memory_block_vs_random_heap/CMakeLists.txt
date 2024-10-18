@@ -23,3 +23,15 @@ set(SOURCES
 file(GLOB SOURCES src/*.cpp)
 
 add_executable(main ${SOURCES})
+
+## Codelldb
+# Add build type options (Debug and Release)
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Debug)  # Default to Debug build if no type is specified
+endif()
+
+# Enable Debug Symbols
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+  message("Building in Debug mode")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")  # Add the -g flag for debugging symbols
+endif()
