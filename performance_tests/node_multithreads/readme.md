@@ -1,3 +1,9 @@
+# To Test 
+
+1. use `top`  or `btop` for cpu tracking.
+2. `node main.js`
+
+---
 # Multithreading in JavaScript
 
 I recently discussed various programming languages and their advantages with my new coworkers at Meta. During our conversation, we debated the topic of multithreading in JavaScript. My stance was that multithreading became possible in Node.js after certain versions, while my coworker believed it wasn't feasible due to JavaScript's original design. This led me to delve deeper into the topic and provide some code examples.
